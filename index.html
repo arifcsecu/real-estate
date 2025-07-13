@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-[#0a101f]">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <img src="assets/logo.png" alt="Plot.fun Logo" class="h-full w-auto" />
+            </div>
+
+            <!-- Button Group -->
+            <div class="flex items-center space-x-2 bg-[#0c0e13] shadow-2 px-2 py-2 rounded">
+                <!-- Settings Button -->
+                <button class="w-9 h-9 flex items-center justify-center bg-[#151e28] rounded-full">
+                    <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M11.3 1.046a1 1 0 0 0-2.6 0L8.4 3.034a6.002 6.002 0 0 0-2.018.857L4.42 2.418a1 1 0 1 0-1.42 1.42l1.473 1.962a6.002 6.002 0 0 0-.857 2.018L1.046 8.7a1 1 0 0 0 0 2.6l1.988.3a6.002 6.002 0 0 0 .857 2.018L2.418 15.58a1 1 0 1 0 1.42 1.42l1.962-1.473a6.002 6.002 0 0 0 2.018.857l.3 1.988a1 1 0 0 0 2.6 0l.3-1.988a6.002 6.002 0 0 0 2.018-.857l1.962 1.473a1 1 0 1 0 1.42-1.42l-1.473-1.962a6.002 6.002 0 0 0 .857-2.018l1.988-.3a1 1 0 0 0 0-2.6l-1.988-.3a6.002 6.002 0 0 0-.857-2.018l1.473-1.962a1 1 0 0 0-1.42-1.42l-1.962 1.473a6.002 6.002 0 0 0-2.018-.857L11.3 1.046ZM10 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
+                    </svg>
+                </button>
+
+                <!-- Connect Button -->
+                <button class="px-4 py-2 rounded-full bg-[#151e28] text-[#C0EB80] font-medium text-sm">
+                    Connect
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-[#0a101f] text-white py-16 px-4 md:px-12">
+        <div
+            class="max-w-7xl mx-auto bg-[url('/assets/hero-image.jpg')] bg-cover rounded flex flex-col-reverse md:flex-row items-center gap-10">
+            <div class="md:w-1/2 px-8 py-8">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                    Invest in Real Estate with <br class="hidden sm:block" />
+                    Crypto. Instantly
+                </h1>
+                <p class="text-white text-base md:text-lg mb-8">
+                    Plot.Fun is the easiest way to invest, trade, and govern yield-generating real estate on-chain
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" class="bg-[#e9692d] text-white font-semibold px-6 py-3 rounded-lg hover:opacity-90">
+                        Start Investing
+                    </a>
+                    <a href="#"
+                        class="bg-[#1c2c4f] border-[#395b95] border-1 text-white font-semibold px-6 py-3 rounded-lg hover:opacity-90">
+                        View Properties
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#0a101f] text-white py-16 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">How Plot.Fun Works</h2>
+            <p class="text-gray-400 text-base md:text-lg">
+                Three simple steps to invest, earn, and trade real estate on-chain.
+            </p>
+        </div>
+
+        <!-- Step Row -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+            <!-- Step 1 -->
+            <div
+                class="bg-[#0a101f] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[300px] h-[300px] flex flex-col justify-between">
+                <h3 class="text-lg font-semibold mb-2">1. Choose a Plot</h3>
+                <div class="flex justify-center mb-4">
+                    <div class="bg-transparent border border-[#1E2433] p-2 rounded-full">
+                        <img src="assets/plot-icon/home.png" alt="Choose a Plot" class="w-10 h-10" />
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Browse yield-generating U.S. properties.
+                    View stats, documents, and expected returns in seconds.
+                </p>
+            </div>
+
+            <!-- Arrow -->
+            <div class="hidden md:flex items-center justify-center w-6 h-full">
+                <img src="assets/arrow.png" class="w-6 h-6" alt="Arrow" />
+            </div>
+
+            <!-- Step 2 -->
+            <div
+                class="bg-[#0a101f] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[300px] h-[300px] flex flex-col justify-between">
+                <h3 class="text-lg font-semibold mb-2">2. Invest with Crypto</h3>
+                <div class="flex justify-center mb-4">
+                    <div class="bg-transparent border border-[#1E2433] p-2 rounded-full">
+                        <img src="assets/plot-icon/crypto.png" alt="Invest with Crypto" class="w-10 h-10" />
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Buy instantly using USDC, ETH, or SOL.
+                    Invest any amount starting from $50.
+                </p>
+            </div>
+
+            <!-- Arrow -->
+            <div class="hidden md:flex items-center justify-center w-6 h-full">
+                <img src="assets/arrow.png" class="w-6 h-6" alt="Arrow" />
+            </div>
+
+            <!-- Step 2 -->
+            <div
+                class="bg-[#0a101f] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[300px] h-[300px] flex flex-col justify-between">
+                <h3 class="text-lg font-semibold mb-2">3. Earn + Trade Anytime</h3>
+                <div class="flex justify-center mb-4">
+                    <div class="bg-transparent border border-[#1E2433] p-2 rounded-full">
+                        <img src="assets/plot-icon/bitcoin.png" alt="Invest with Crypto" class="w-10 h-10" />
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Get daily yield payouts in stablecoins.
+                    Trade tokens on-chain 24/7 — no lockups.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-[#0a101f] text-white py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <!-- Heading -->
+            <div class="mb-12 max-w-5xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                    Join a Growing Community of On-Chain Property Owners
+                </h2>
+                <p class="text-gray-400 text-base md:text-lg">
+                    Plot.Fun is backed by real assets, built on smart contracts, and governed by people like you.
+                </p>
+            </div>
+
+            <!-- Grid Content -->
+            <div class="flex justify-between flex-wrap md:flex-nowrap gap-8 mt-10">
+                <!-- Left Side -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-[#1A2233] p-2 rounded-xl">
+                            <img src="assets/tic.png" class="w-5 h-5" />
+                        </span>
+                        <h3 class="text-lg font-semibold">Backed by Real-World Assets</h3>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-[#1A2233] p-2 rounded-xl">
+                            <img src="assets/tic.png" class="w-5 h-5" alt="Governance Icon" />
+                        </span>
+                        <h3 class="text-lg font-semibold">Powered by Smart Contract</h3>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-[#1A2233] p-2 rounded-xl">
+                            <img src="assets/tic.png" class="w-5 h-5" alt="Governance Icon" />
+                        </span>
+                        <h3 class="text-lg font-semibold">Audited and Secure</h3>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-[#1A2233] p-2 rounded-xl">
+                            <img src="assets/tic.png" class="w-5 h-5" alt="Governance Icon" />
+                        </span>
+                        <h3 class="text-lg font-semibold">Built by Web3 Natives</h3>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="bg-[#1A2233] p-2 rounded-xl">
+                            <img src="assets/tic.png" class="w-5 h-5" alt="Governance Icon" />
+                        </span>
+                        <h3 class="text-lg font-semibold">Investor Dashboard & Transparency Tools</h3>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="space-y-8">
+                    <!-- Governance -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-[#1A2233] p-2 rounded-md">
+                                <img src="assets/governance.png" class="w-5 h-5" alt="Governance Icon" />
+                            </span>
+                            <h3 class="text-lg font-semibold">Own Governance Power</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            Your voice matters. Propose, vote, and shape decisions on each property.
+                        </p>
+                    </div>
+
+                    <!-- Global Access -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-[#1A2233] p-2 rounded-md">
+                                <img src="assets/global-access.png" class="w-5 h-5" alt="Globe Icon" />
+                            </span>
+                            <h3 class="text-lg font-semibold">Global Access</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm">
+                            Invest from anywhere. Trade with anyone. No borders.
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div>
+
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-[#1A2233] p-2 rounded-md">
+                                <img src="assets/join-channel.png" class="w-5 h-5" alt="Globe Icon" />
+                            </span>
+                            <h3 class="text-lg font-semibold mb-2">Join Our Channels</h3>
+                        </div>
+
+                        <div class="flex items-center gap-6 text-gray-300">
+                            <a href="#" class="flex items-center gap-2 hover:text-white">
+                                <img src="assets/social-icon/twitter.png" alt="Twitter" class="w-5 h-5" />
+                                <span>Twitter / X</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 hover:text-white">
+                                <img src="assets/social-icon/discord.png" alt="Discord" class="w-5 h-5" />
+                                <span>Discord</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white text-gray-900 py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Real Estate. Rebuilt for Crypto.
+            </h2>
+
+            <p class="text-gray-600 mb-12 text-base md:text-lg">
+                Plot.Fun makes it easy to invest, earn, and govern real estate like never before.
+            </p>
+
+            <!-- 3 Feature Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-left md:text-center">
+
+                <!-- Feature 1 -->
+                <div>
+                    <div class="flex md:justify-center mb-4">
+                        <img src="assets/rebuilt-icon/dollar.png" alt="Stablecoin" class="w-14 h-10" />
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Daily Yield in Stablecoins</h3>
+                    <p class="text-gray-600 text-sm">
+                        Earn passive income daily from rent or solar energy directly to your wallet.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div>
+                    <div class="flex md:justify-center mb-4">
+                        <img src="assets/rebuilt-icon/liquidity.png" alt="Instant Liquidity" class="w-14 h-10" />
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Instant Liquidity</h3>
+                    <p class="text-gray-600 text-sm">
+                        No more waiting years to sell. Trade property tokens anytime our bonding curve allows.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div>
+                    <div class="flex md:justify-center mb-4">
+                        <img src="assets/rebuilt-icon/governance.png" alt="Governance" class="w-14 h-10" />
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Governance Power</h3>
+                    <p class="text-gray-600 text-sm">
+                        Vote on major decisions — from renovations to sales. Your ownership gives you a voice.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white text-gray-900 py-16 px-4 md:px-8">
+        <div class="max-w-5xl mx-auto text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3">How Plot.Fun Compares</h2>
+            <p class="text-gray-600 text-base md:text-lg">
+                See how Plot.Fun stacks up against REITs and traditional real estate investing.
+            </p>
+        </div>
+
+        <div class="max-w-5xl mx-auto overflow-x-auto">
+            <table class="min-w-[600px] w-full text-left border-collapse">
+                <thead>
+                    <tr class="text-sm text-gray-700 font-semibold border-b border-gray-950">
+                        <th class="py-2 pr-4">Feature</th>
+                        <th class="py-2 px-4">Plot.Fun</th>
+                        <th class="py-2 px-4">Traditional Real Estate</th>
+                        <th class="py-2 px-4">REITs</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm text-gray-800">
+                    <!-- Row 1 -->
+                    <tr class="border-b border-gray-950">
+                        <td class="py-3 pr-4">On-Chain Ownership</td>
+                        <td class="py-3 px-4 flex items-center gap-2">
+                            <span class="text-green-500 text-lg">✅</span> Yes
+                        </td>
+                        <td class="py-3 px-4">No</td>
+                        <td class="py-3 px-4 text-red-500 font-semibold">No</td>
+                    </tr>
+
+                    <!-- Row 2 -->
+                    <tr class="border-b border-gray-950">
+                        <td class="py-3 pr-4">Instant Liquidity</td>
+                        <td class="py-3 px-4">24/7 Trading</td>
+                        <td class="py-3 px-4">Years to Exit</td>
+                        <td class="py-3 px-4">Market Hours Only</td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr class="border-b border-gray-950">
+                        <td class="py-3 pr-4">Daily Yield in Stablecoins</td>
+                        <td class="py-3 px-4 flex items-center gap-2">
+                            <span class="text-green-500 text-lg">✅</span> Yes
+                        </td>
+                        <td class="py-3 px-4">No</td>
+                        <td class="py-3 px-4 text-red-500 font-semibold">No</td>
+                    </tr>
+
+                    <!-- Row 4 -->
+                    <tr class="border-b border-gray-950">
+                        <td class="py-3 pr-4">Invest Starting at $1</td>
+                        <td class="py-3 px-4 flex items-center gap-2">
+                            <span class="text-green-500 text-lg">✅</span> Yes
+                        </td>
+                        <td class="py-3 px-4">High Minimums</td>
+                        <td class="py-3 px-4">Usually $1,000+</td>
+                    </tr>
+
+                    <!-- Row 5 -->
+                    <tr class="border-b border-gray-950">
+                        <td class="py-3 pr-4">Governance Rights</td>
+                        <td class="py-3 px-4 flex items-center gap-2">
+                            <span class="text-yellow-400 text-lg">🟡</span> Yes
+                        </td>
+                        <td class="py-3 px-4">Sometimes</td>
+                        <td class="py-3 px-4 text-red-500 font-semibold">No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="bg-white text-gray-900 py-16 px-4 md:px-8">
+        <div class="max-w-xl mx-auto text-center mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-2">Explore The Upcoming Platform</h2>
+            <p class="text-gray-600 text-base">
+                Real, income-producing properties — tokenized and ready for you to invest in.
+            </p>
+        </div>
+
+        <!-- Property Card -->
+        <div class="max-w-6xl mx-auto relative">
+            <!-- Property Image -->
+            <div class="overflow-hidden rounded-xl">
+                <img src="assets/solar-panel.jpg" alt="Solar Land" class="w-full h-auto" />
+            </div>
+
+            <!-- Info Box -->
+            <div class="bg-white shadow-md rounded-xl px-6 py-5 w-[90%] mx-auto -mt-10 relative z-10">
+                <!-- Top row -->
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-base font-semibold">
+                        <span class="inline-flex items-center gap-2">
+                            <img src="assets/location.png" class="w-4 h-5" />
+                            Solar Land – Texas, USA
+                        </span>
+                    </h3>
+                    <span class="text-sm font-semibold">$48,000</span>
+                </div>
+
+                <!-- Detail rows -->
+                <div class="space-y-3 text-sm text-gray-700">
+                    <div class="flex justify-between">
+                        <span class="flex items-center gap-2 font-semibold">
+                            <img src="assets/dollar.png" class="w-4 h-4" />
+                            Expected Yield
+                        </span>
+                        <span class="font-semibold">10.1% APY <span class="text-gray-400">(paid in USDC)</span></span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <span class="flex items-center gap-2 font-semibold">
+                            <img src="assets/padlock.png" class="w-4 h-4" />
+                            Status
+                        </span>
+                        <span class="font-semibold">Open for bonding</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <span class="flex items-center gap-2 font-semibold">
+                            <img src="assets/minimum-invesment.png" class="w-4 h-4" />
+                            Minimum Investment
+                        </span>
+                        <span class="font-semibold">$1</span>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center mt-6">
+                    <a href="#"
+                        class="inline-block bg-[#2873E9] hover:bg-blue-700 text-white text-sm font-medium px-6 py-3 rounded-md">
+                        View Property Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#0a101f] text-white py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-xl font-semibold mb-6">Fund a Property</h2>
+
+            <div class="space-y-6">
+                <!-- Property Card -->
+                <div class="flex items-start gap-4 bg-[#0e111c] p-4 rounded-lg">
+                    <img src="assets/propertiex.jpg" alt="2 Acres in Nicaragua"
+                        class="w-24 h-32 object-cover rounded-md" />
+                    <div class="flex-1">
+                        <h3 class="font-medium mb-1">2 Acres in Nicaragua</h3>
+                        <div class="flex justify-between text-sm text-white mb-1">
+                            <span>Price</span>
+                            <span>€5.000</span>
+                        </div>
+
+                        <div class="py-2">
+                            <div class="w-full h-2 rounded-full bg-[#1D2230] overflow-hidden">
+                                <!-- Filled Progress -->
+                                <div class="h-full bg-cyan-400" style="width: 10%"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <p class="text-sm text-gray-400">Raised</p>
+                            <div class="flex flex-col items-end">
+                                <p class="text-sm pb-2">40.97 SOL</p>
+                                <button
+                                    class="bg-[#15BFC7] hover:bg-cyan-600 text-sm text-white font-medium px-4 py-1 rounded-md">
+                                    Fund
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 bg-[#0e111c] p-4 rounded-lg">
+                    <img src="assets/propertiex.jpg" alt="2 Acres in Nicaragua"
+                        class="w-24 h-32 object-cover rounded-md" />
+                    <div class="flex-1">
+                        <h3 class="font-medium mb-1">Land in Portugal</h3>
+                        <div class="flex justify-between text-sm text-white mb-1">
+                            <span>Price</span>
+                            <span>€7.500</span>
+                        </div>
+
+                        <div class="py-2">
+                            <div class="w-full h-2 rounded-full bg-[#1D2230] overflow-hidden">
+                                <!-- Filled Progress -->
+                                <div class="h-full bg-cyan-400" style="width: 7%"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <p class="text-sm text-gray-400">Raised</p>
+                            <div class="flex flex-col items-end">
+                                <p class="text-sm pb-2">78.320 SOL</p>
+                                <button
+                                    class="bg-[#15BFC7] hover:bg-cyan-600 text-sm text-white font-medium px-4 py-1 rounded-md">
+                                    Fund
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 bg-[#0e111c] p-4 rounded-lg">
+                    <img src="assets/propertiex.jpg" alt="2 Acres in Nicaragua"
+                        class="w-24 h-32 object-cover rounded-md" />
+                    <div class="flex-1">
+                        <h3 class="font-medium mb-1">Off-Grid Land in Colorado</h3>
+                        <div class="flex justify-between text-sm text-white mb-1">
+                            <span>Price</span>
+                            <span>€4.000</span>
+                        </div>
+
+                        <div class="py-2">
+                            <div class="w-full h-2 rounded-full bg-[#1D2230] overflow-hidden">
+                                <!-- Filled Progress -->
+                                <div class="h-full bg-cyan-400" style="width: 15%"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <p class="text-sm text-gray-400">Raised</p>
+                            <div class="flex flex-col items-end">
+                                <p class="text-sm pb-2">22.780 SOL</p>
+                                <button
+                                    class="bg-[#15BFC7] hover:bg-cyan-600 text-sm text-white font-medium px-4 py-1 rounded-md">
+                                    Fund
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-start gap-4 bg-[#0e111c] p-4 rounded-lg">
+                    <img src="assets/propertiex.jpg" alt="2 Acres in Nicaragua"
+                        class="w-24 h-32 object-cover rounded-md" />
+                    <div class="flex-1">
+                        <h3 class="font-medium mb-1">4 Ha in Costa Rica</h3>
+                        <div class="flex justify-between text-sm text-white mb-1">
+                            <span>Price</span>
+                            <span>€10.000</span>
+                        </div>
+
+                        <div class="py-2">
+                            <div class="w-full h-2 rounded-full bg-[#1D2230] overflow-hidden">
+                                <!-- Filled Progress -->
+                                <div class="h-full bg-cyan-400" style="width: 13%"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <p class="text-sm text-gray-400">Raised</p>
+                            <div class="flex flex-col items-end">
+                                <p class="text-sm pb-2">156.450 SOL</p>
+                                <button
+                                    class="bg-[#15BFC7] hover:bg-cyan-600 text-sm text-white font-medium px-4 py-1 rounded-md">
+                                    Fund
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#090914] text-white py-12 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+
+            <!-- Left Column -->
+            <div class="flex flex-col items-center md:items-start">
+                <h2 class="text-3xl font-bold mb-2">Plot.Fun</h2>
+                <p class="text-white mb-4">
+                    Fractional real estate. <br />
+                    On-chain. Built for Web3 investors.
+                </p>
+                <p class="text-gray-500">© 2025 Plot Fun Inc. <br />All rights reserved.</p>
+            </div>
+
+            <!-- Middle Links -->
+            <div class="space-y-2 flex flex-col items-center font-medium text-xl">
+                <a href="#" class="block hover:underline ">Home</a>
+                <a href="#" class="block hover:underline">How It Works</a>
+                <a href="#" class="block hover:underline">View Properties</a>
+                <a href="#" class="block hover:underline">Community</a>
+                <a href="#" class="block hover:underline">Docs</a>
+                <a href="#" class="block hover:underline">Blog</a>
+            </div>
+
+            <!-- Right Links & Icons -->
+            <div class="space-y-2 flex flex-col items-center md:items-end font-medium text-xl">
+                <a href="#" class="block hover:underline">Terms of Use</a>
+                <a href="#" class="block hover:underline">Privacy Policy</a>
+                <a href="#" class="block hover:underline">Token Disclaimer</a>
+
+                <!-- Icons -->
+                <div class="flex items-center gap-4 mt-4">
+                    <a href="#"><img src="assets/social-icon/twitter.png" alt="X" class="w-5 h-5" /></a>
+                    <a href="#"><img src="assets/social-icon/discord.png" alt="Discord" class="w-5 h-5" /></a>
+                    <a href="#"><img src="assets/social-icon/youtube.png" alt="YouTube" class="w-5 h-5" /></a>
+                </div>
+
+                <!-- Email -->
+                <p class="mt-2 text-gray-400">team@plot.fun</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
