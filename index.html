@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="src/output.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="bg-[#040919]">
+    <nav class="bg-[#030A1A]">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <!-- Logo -->
             <div class="flex-shrink-0">
@@ -27,15 +28,25 @@
                     </svg>
                 </button>
 
-                <!-- Connect Button -->
-                <button class="px-4 py-2 rounded-full bg-[#151e28] text-[#C0EB80] font-medium text-sm">
-                    Connect
-                </button>
+                <div class="relative inline-block" x-data="{ show: false }">
+                    <!-- Button -->
+                    <button @mouseenter="show = true" @mouseleave="show = false"
+                        class="px-4 py-2 rounded-full bg-[#151e28] text-[#C0EB80] font-medium text-sm">
+                        Connect Wallet
+                    </button>
+                    <div x-show="show" x-transition
+                        class="absolute top-full left-1/2 -translate-x-1/2 mt-2 px-3 py-1 text-sm text-[#C0EB80] bg-[#151e28] rounded shadow-lg text-nowrap"
+                        style="display: none;">
+                        <div class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#151e28] rotate-45 text-nowrap"></div>
+                        coming soon
+                    </div>
+                </div>
+
             </div>
         </div>
     </nav>
 
-    <section class="bg-[#040919] text-white py-16 px-4 md:px-12">
+    <section class="bg-[#030A1A] text-white py-16 px-4 md:px-12">
         <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
 
             <div class="md:w-2/3 px-8 py-8">
@@ -44,15 +55,11 @@
                     Crypto. Instantly
                 </h1>
                 <p class="text-gray-200 text-base md:text-lg mb-8">
-                    Plot.Fun is the easiest way to invest, trade, and govern yield-generating real estate on-chain
+                    Plot.Fun is the easiest way to invest, trade, and govern real estate on-chain.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#" class="bg-[#e9692d] text-white font-semibold px-6 py-3 rounded-lg hover:opacity-90">
-                        Start Investing
-                    </a>
-                    <a href="#"
-                        class="bg-[#1c2c4f] border-[#395b95] border-1 text-white font-semibold px-6 py-3 rounded-lg hover:opacity-90">
-                        View Properties
+                        Join Waitlist
                     </a>
                 </div>
             </div>
@@ -63,7 +70,7 @@
         </div>
     </section>
 
-    <section class="bg-[#040919] text-white py-16 px-4 md:px-8">
+    <section class="bg-[#030A1A] text-white py-16 px-4 md:px-8">
         <div class="max-w-7xl mx-auto text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">How Plot.Fun Works</h2>
             <p class="text-gray-400 text-base md:text-lg">
@@ -75,7 +82,7 @@
         <div class="flex flex-col md:flex-row items-center justify-center gap-3">
             <!-- Step 1 -->
             <div
-                class="bg-[#0a101f] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[310px] h-[320px] md:h-[400px] lg:h-[320px] flex flex-col justify-between">
+                class="bg-[#030A1A] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[310px] h-[320px] md:h-[400px] lg:h-[320px] flex flex-col justify-between">
                 <div class="h-3/8">
                     <h3 class="text-lg font-medium mb-2 text-nowrap text-left">1. Choose a Plot</h3>
                     <div class="flex justify-center items-center mb-4">
@@ -85,10 +92,10 @@
                     </div>
                 </div>
                 <div class="text-left h-auto">
-                    <h6 class="text-base font-semibold text-gray-200">Browse yield-generating U.S. properties.</h6>
+                    <h6 class="text-base font-semibold text-gray-200">Explore over 10,000 U.S Properties</h6>
 
-                    <p class="text-base text-gray-300">Each real estate deal is fully tokenized and verified. View
-                        stats, documents, and expected returns in seconds</p>
+                    <p class="text-base text-gray-300">Browse properties that interest you. View property info, stats,
+                        history, and costs in seconds.</p>
                 </div>
             </div>
 
@@ -99,7 +106,7 @@
 
             <!-- Step 2 -->
             <div
-                class="bg-[#0a101f] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[310px] h-[320px] md:h-[400px] lg:h-[320px] flex flex-col justify-between">
+                class="bg-[#030A1A] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[310px] h-[320px] md:h-[400px] lg:h-[320px] flex flex-col justify-between">
                 <div class="h-3/8">
                     <h3 class="text-lg font-medium mb-2 text-nowrap text-left">2. Invest with Crypto</h3>
                     <div class="flex justify-center items-center mb-4">
@@ -111,8 +118,8 @@
                 <div class="text-left h-auto">
                     <h6 class="text-base font-semibold text-gray-200">Buy instantly using USDC, ETH or SOL</h6>
 
-                    <p class="text-gray-300 text-base">Invest any amount starting from $50. Our bonding curve
-                        dynamically prices each share in real time</p>
+                    <p class="text-gray-300 text-base">Invest any amount of Solana, Ethereum, or USDC (starting at $1)
+                        into a property of your choosing.</p>
                 </div>
             </div>
 
@@ -123,7 +130,7 @@
 
             <!-- Step 3 -->
             <div
-                class="bg-[#0a101f] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[310px] h-[320px] md:h-[400px] lg:h-[320px] flex flex-col justify-between">
+                class="bg-[#030A1A] border border-[#1E2433] rounded-lg p-6 text-center w-full md:w-[310px] h-[320px] md:h-[400px] lg:h-[320px] flex flex-col justify-between">
                 <div class="h-3/8">
                     <h3 class="text-lg font-medium mb-2 text-nowrap text-left ">3. Earn + Trade Anytime</h3>
                     <div class="flex justify-center mb-4">
@@ -133,20 +140,20 @@
                     </div>
                 </div>
                 <div class="text-left h-auto">
-                    <p class="text-gray-300 text-base font-semibold">Get daily yield payouts in stablecoins. Trade your
-                        ownership tokens on-chain with others users- 24/7 liquidity, no lockups</p>
+                    <p class="text-gray-300 text-base font-semibold">Receive and stake governance coins to earn daily
+                        protocol emissions. Buy and sell governance coins on secondary markets.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="bg-[#040919] text-white py-16 px-4 md:px-8">
+    <section class="bg-[#030A1A] text-white py-16 px-4 md:px-8">
         <div class="max-w-6xl mx-auto">
             <!-- Heading -->
-            <div class="mb-12 max-w-5xl">
+            <div class="mb-12 max-w-6xl">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-                    Join a Growing Community of On-Chain Property Owners
+                    Join a Growing Community of On-Chain Real Estate Governors
                 </h2>
                 <p class="text-gray-400 text-base md:text-lg">
                     Plot.Fun is backed by real assets, built on smart contracts, and governed by people like you.
@@ -167,7 +174,7 @@
                         <span class="bg-[#1A2233] p-2 rounded-xl">
                             <img src="assets/tic.png" class="w-5 h-5" alt="Governance Icon" />
                         </span>
-                        <h3 class="text-lg font-semibold">Powered by Smart Contract</h3>
+                        <h3 class="text-lg font-semibold">Powered by Smart Contracts</h3>
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="bg-[#1A2233] p-2 rounded-xl">
@@ -244,128 +251,6 @@
     </section>
 
     <section class="bg-white text-gray-900 py-16 px-4 md:px-8">
-        <div class="max-w-6xl mx-auto text-center">
-            <!-- Heading -->
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                Real Estate. Rebuilt for Crypto.
-            </h2>
-
-            <p class="text-gray-600 mb-12 text-base md:text-lg">
-                Plot.Fun makes it easy to invest, earn, and govern real estate like never before.
-            </p>
-
-            <!-- 3 Feature Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-left md:text-center">
-
-                <!-- Feature 1 -->
-                <div>
-                    <div class="flex md:justify-center mb-4">
-                        <img src="assets/rebuilt-icon/dollar.png" alt="Stablecoin" class="w-14 h-10" />
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Daily Yield in Stablecoins</h3>
-                    <p class="text-gray-600 text-sm">
-                        Earn passive income daily from rent or solar energy directly to your wallet.
-                    </p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div>
-                    <div class="flex md:justify-center mb-4">
-                        <img src="assets/rebuilt-icon/liquidity.png" alt="Instant Liquidity" class="w-14 h-10" />
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Instant Liquidity</h3>
-                    <p class="text-gray-600 text-sm">
-                        No more waiting years to sell. Trade property tokens anytime our bonding curve allows.
-                    </p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div>
-                    <div class="flex md:justify-center mb-4">
-                        <img src="assets/rebuilt-icon/governance.png" alt="Governance" class="w-14 h-10" />
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Governance Power</h3>
-                    <p class="text-gray-600 text-sm">
-                        Vote on major decisions — from renovations to sales. Your ownership gives you a voice.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white text-gray-900 py-16 px-4 md:px-8">
-        <div class="max-w-5xl mx-auto text-center mb-10">
-            <h2 class="text-3xl md:text-4xl font-bold mb-3">How Plot.Fun Compares</h2>
-            <p class="text-gray-600 text-base md:text-lg">
-                See how Plot.Fun stacks up against REITs and traditional real estate investing.
-            </p>
-        </div>
-
-        <div class="max-w-5xl mx-auto overflow-x-auto">
-            <table class="min-w-[600px] w-full text-left border-collapse">
-                <thead>
-                    <tr class="text-xl text-gray-700 font-semibold border-b-2 border-gray-950">
-                        <th class="py-2 pr-4">Feature</th>
-                        <th class="py-2 px-4">Plot.Fun</th>
-                        <th class="py-2 px-4">Traditional Real Estate</th>
-                        <th class="py-2 px-4">REITs</th>
-                    </tr>
-                </thead>
-                <tbody class="text-xl text-gray-800">
-                    <!-- Row 1 -->
-                    <tr class="border-b-2 border-gray-950">
-                        <td class="py-3 pr-4">On-Chain Ownership</td>
-                        <td class="py-3 px-4 flex items-center gap-2">
-                            <span class="text-green-500 text-lg">✅</span> Yes
-                        </td>
-                        <td class="py-3 px-4">No</td>
-                        <td class="py-3 px-4 text-red-500 font-semibold">No</td>
-                    </tr>
-
-                    <!-- Row 2 -->
-                    <tr class="border-b-2 border-gray-950">
-                        <td class="py-3 pr-4">Instant Liquidity</td>
-                        <td class="py-3 px-4">24/7 Trading</td>
-                        <td class="py-3 px-4">Years to Exit</td>
-                        <td class="py-3 px-4">Market Hours Only</td>
-                    </tr>
-
-                    <!-- Row 3 -->
-                    <tr class="border-b-2 border-gray-950">
-                        <td class="py-3 pr-4">Daily Yield in Stablecoins</td>
-                        <td class="py-3 px-4 flex items-center gap-2">
-                            <span class="text-green-500 text-lg">✅</span> Yes
-                        </td>
-                        <td class="py-3 px-4">No</td>
-                        <td class="py-3 px-4 text-red-500 font-semibold">No</td>
-                    </tr>
-
-                    <!-- Row 4 -->
-                    <tr class="border-b-2 border-gray-950">
-                        <td class="py-3 pr-4">Invest Starting at $1</td>
-                        <td class="py-3 px-4 flex items-center gap-2">
-                            <span class="text-green-500 text-lg">✅</span> Yes
-                        </td>
-                        <td class="py-3 px-4">High Minimums</td>
-                        <td class="py-3 px-4">Usually $1,000+</td>
-                    </tr>
-
-                    <!-- Row 5 -->
-                    <tr class="border-b-2 border-gray-950">
-                        <td class="py-3 pr-4">Governance Rights</td>
-                        <td class="py-3 px-4 flex items-center gap-2">
-                            <span class="text-yellow-400 text-lg">🟡</span> Yes
-                        </td>
-                        <td class="py-3 px-4">Sometimes</td>
-                        <td class="py-3 px-4 text-red-500 font-semibold">No</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section class="bg-white text-gray-900 py-16 px-4 md:px-8">
         <div class="max-w-xl mx-auto text-center mb-8">
             <h2 class="text-2xl md:text-3xl font-bold mb-2">Explore The Upcoming Platform</h2>
             <p class="text-gray-600 text-base">
@@ -431,7 +316,7 @@
         </div>
     </section>
 
-    <section class="bg-[#040919] text-white py-16 px-4 md:px-8">
+    <section class="bg-[#030A1A] text-white py-16 px-4 md:px-8">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-xl font-semibold mb-6">Fund a Property</h2>
 
@@ -448,7 +333,7 @@
                         </div>
 
                         <div class="py-2">
-                            <div class="w-full h-2 rounded-full bg-[#1D2230] overflow-hidden">
+                            <div class="w-full h-2 rounded-full bg-[#030A1A] overflow-hidden">
                                 <!-- Filled Progress -->
                                 <div class="h-full bg-cyan-400" style="width: 10%"></div>
                             </div>
@@ -478,7 +363,7 @@
                         </div>
 
                         <div class="py-2">
-                            <div class="w-full h-2 rounded-full bg-[#1D2230] overflow-hidden">
+                            <div class="w-full h-2 rounded-full bg-[#030A1A] overflow-hidden">
                                 <!-- Filled Progress -->
                                 <div class="h-full bg-cyan-400" style="width: 7%"></div>
                             </div>
@@ -508,7 +393,7 @@
                         </div>
 
                         <div class="py-2">
-                            <div class="w-full h-2 rounded-full bg-[#1D2230] overflow-hidden">
+                            <div class="w-full h-2 rounded-full bg-[#030A1A] overflow-hidden">
                                 <!-- Filled Progress -->
                                 <div class="h-full bg-cyan-400" style="width: 15%"></div>
                             </div>
@@ -539,7 +424,7 @@
                         </div>
 
                         <div class="py-2">
-                            <div class="w-full h-2 rounded-full bg-[#1D2230] overflow-hidden">
+                            <div class="w-full h-2 rounded-full bg-[#030A1A] overflow-hidden">
                                 <!-- Filled Progress -->
                                 <div class="h-full bg-cyan-400" style="width: 13%"></div>
                             </div>
@@ -561,46 +446,7 @@
         </div>
     </section>
 
-    <section class="bg-[#040919] text-white px-4 md:px-8 pb-8">
-        <div class=" bg-[#110C1D] max-w-6xl mx-auto rounded-xl overflow-hidden shadow-lg px-8 py-8">
-            <img src="assets/house.jpg" alt="Fixer-Upper" class="w-full aspect-16/6 rounded-xl mb-4">
-
-            <div class="max-w-sm mx-auto">
-                <h3 class="text-2xl font-semibold">Fixer-Upper</h3>
-                <p class="text-2xl font-bold">$1.200</p>
-                <p class="text-base text-gray-400 mb-4">10,73 SOL</p>
-
-                <label for="amount" class="block mb-1 text-base">Enter amount:</label>
-                <input id="amount" type="number" value="1"
-                    class="w-full px-3 py-2 rounded-md bg-[#1a1a2e] text-white border border-[#333] focus:outline-none focus:ring-2 focus:ring-pink-500 mb-4" />
-
-                <button
-                    class="bg-[#ff3864] text-white w-full py-2 rounded-md font-semibold hover:bg-pink-600 transition">
-                    ADD SOL
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-[#040919] text-white px-4 md:px-8 py-8">
-        <div class="max-w-6xl mx-auto text-white">
-            <div class="flex items-center justify-between mb-1">
-                <span class="text-base text-gray-400 uppercase tracking-widest">Raised</span>
-                <span class="text-base text-white font-medium">52 %</span>
-            </div>
-
-            <div class="flex items-center justify-between mb-2">
-                <span class="text-3xl font-bold">$630.00</span>
-
-                <!-- Progress bar -->
-                <div class="w-1/2 h-3 bg-[#141421] rounded-full overflow-hidden">
-                    <div class="h-full bg-green-500 w-[52%] rounded-full"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-[#040919] px-4 md:px-8 py-8">
+    <section class="bg-[#030A1A] px-4 md:px-8 py-8">
         <div class=" text-white p-4 max-w-6xl mx-auto">
 
             <div class="p-6">
@@ -637,7 +483,7 @@
             <div class="mb-6">
                 <h3 class="text-base md:text-2xl font-semibold text-white mb-2">Bonded</h3>
 
-                <div class="bg-[#0a101f] rounded-lg p-3 flex gap-3 mb-3">
+                <div class="bg-[#030A1A] rounded-lg p-3 flex gap-3 mb-3">
                     <img src="assets/house.jpg" alt="House" class="w-20 h-20 md:w-30 md:h-30 rounded-md object-cover">
                     <div class="flex flex-col justify-between py-4">
                         <p class="text-sm md:text-2xl font-semibold">702 Smith Ave Waverly IA 50677</p>
@@ -645,7 +491,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#0a101f] rounded-lg p-3 flex gap-3">
+                <div class="bg-[#030A1A] rounded-lg p-3 flex gap-3">
                     <img src="assets/house.jpg" alt="Timberland"
                         class="w-20 h-20 md:w-30 md:h-30 rounded-md object-cover">
                     <div class="flex flex-col justify-between py-4">
@@ -685,7 +531,7 @@
         </div>
     </section>
 
-    <section class="bg-[#040919] px-4 md:px-8 py-8">
+    <section class="bg-[#030A1A] px-4 md:px-8 py-8">
         <div class="text-white p-6 max-w-6xl mx-auto">
             <!-- Title -->
             <h2 class="text-xl md:text-2xl font-bold mb-1">REFERRAL DASHBOARD</h2>
@@ -741,7 +587,7 @@
         </div>
     </section>
 
-    <section class="bg-[#040919] px-4 md:px-8 py-8">
+    <section class="bg-[#030A1A] px-4 md:px-8 py-8">
         <div class="text-white p-6 max-w-6xl mx-auto">
             <!-- Heading -->
             <div class="mb-6">
