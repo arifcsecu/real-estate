@@ -37,8 +37,10 @@
                     <div x-show="show" x-transition
                         class="absolute top-full left-1/2 -translate-x-1/2 mt-2 px-3 py-1 text-sm text-[#C0EB80] bg-[#151e28] rounded shadow-lg text-nowrap"
                         style="display: none;">
-                        <div class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#151e28] rotate-45 text-nowrap"></div>
-                        coming soon
+                        <div
+                            class="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#151e28] rotate-45 text-nowrap">
+                        </div>
+                        Coming Soon
                     </div>
                 </div>
 
@@ -87,7 +89,7 @@
                     <h3 class="text-lg font-medium mb-2 text-nowrap text-left">1. Choose a Plot</h3>
                     <div class="flex justify-center items-center mb-4">
                         <div class="bg-transparent border border-[#1E2433] p-2 rounded-full">
-                            <img src="assets/plot-icon/home.png" alt="Choose a Plot" class="w-10 h-10" />
+                            <img src="assets/plot-icon/home.png" alt="Choose a Plot" class="w-12 h-12" />
                         </div>
                     </div>
                 </div>
@@ -111,7 +113,7 @@
                     <h3 class="text-lg font-medium mb-2 text-nowrap text-left">2. Invest with Crypto</h3>
                     <div class="flex justify-center items-center mb-4">
                         <div class="bg-transparent border border-[#1E2433] p-2 rounded-full">
-                            <img src="assets/plot-icon/crypto.png" alt="Invest with Crypto" class="w-10 h-10" />
+                            <img src="assets/plot-icon/usdc.png" alt="Invest with Crypto" class="w-12 h-12" />
                         </div>
                     </div>
                 </div>
@@ -135,7 +137,7 @@
                     <h3 class="text-lg font-medium mb-2 text-nowrap text-left ">3. Earn + Trade Anytime</h3>
                     <div class="flex justify-center mb-4">
                         <div class="bg-transparent border border-[#1E2433] p-2 rounded-full">
-                            <img src="assets/plot-icon/bitcoin.png" alt="Invest with Crypto" class="w-10 h-10" />
+                            <img src="assets/plot-icon/stablecoin.png" alt="Invest with Crypto" class="w-12 h-12" />
                         </div>
                     </div>
                 </div>
@@ -143,6 +145,53 @@
                     <p class="text-gray-300 text-base font-semibold">Receive and stake governance coins to earn daily
                         protocol emissions. Buy and sell governance coins on secondary markets.</p>
                 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-[#030A1A] text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4 md:gap-7 text-center">
+
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center h-[250px] md:h-[320px]">
+                <img src="assets/fund/fund-icon.png" alt="Fund Property" class="w-28 h-28 mb-4" />
+                <p class="text-base md:text-2xl font-medium">Fund a<br />Property</p>
+            </div>
+
+            <!-- Arrow -->
+            <span class="hidden md:block text-3xl md:text-4xl text-white">→</span>
+            <span class="block md:hidden text-white text-3xl">↓</span>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center h-[250px] md:h-[320px]">
+                <img src="assets/fund/receive-governance.png" alt="Receive Governance Coins"
+                    class="w-28 h-28 mb-4" />
+                <p class="text-base md:text-2xl font-medium">Receive<br />Governance Coins</p>
+            </div>
+
+            <!-- Arrow -->
+            <span class="hidden md:block text-3xl md:text-4xl text-white">→</span>
+            <span class="block md:hidden text-white text-3xl">↓</span>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center h-[250px] md:h-[320px]">
+                <img src="assets/fund/tresury-collects.png" alt="Treasury Collects"
+                    class="w-28 h-28 mb-4" />
+                <p class="text-base md:text-2xl font-medium">Treasury Collects<br />Protocol Fees<br />From Property</p>
+            </div>
+
+            <!-- Arrow -->
+            <span class="hidden md:block text-4xl text-white">→</span>
+            <span class="block md:hidden text-white text-3xl">↓</span>
+
+            <!-- Step 4 -->
+            <div class="flex flex-col items-center h-[250px] md:h-[320px]">
+                <img src="assets/fund/staking-voting.png" alt="Governance Coin Staking"
+                    class="w-28 h-28 mb-4" />
+                <p class="text-base md:text-2xl font-medium">Governance Coin<br /> Staking & Voting<br />Earns Protocol
+                    Fee Emissions
+                </p>
             </div>
 
         </div>
@@ -250,10 +299,10 @@
         </div>
     </section>
 
-    <section class="bg-white text-gray-900 py-16 px-4 md:px-8">
-        <div class="max-w-xl mx-auto text-center mb-8">
-            <h2 class="text-2xl md:text-3xl font-bold mb-2">Explore The Upcoming Platform</h2>
-            <p class="text-gray-600 text-base">
+    <section class="bg-[#030A1A] text-gray-900 py-16 px-4 md:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-8">
+            <h2 class="text-3xl md:text-5xl font-bold mb-2 text-gray-400">Explore The Plot.Fun Platform</h2>
+            <p class="text-gray-400 text-lg md:text-2xl">
                 Real, income-producing properties — tokenized and ready for you to invest in.
             </p>
         </div>
@@ -262,16 +311,16 @@
         <div class="max-w-6xl mx-auto relative">
             <!-- Property Image -->
             <div class="overflow-hidden rounded-xl">
-                <img src="assets/solar-panel.jpg" alt="Solar Land" class="w-full h-auto" />
+                <img src="assets/solar-panel.png" alt="Solar Land" class="w-full h-auto" />
             </div>
 
             <!-- Info Box -->
-            <div class="bg-white shadow-md rounded-xl px-6 py-5 w-[90%] mx-auto -mt-10 relative z-10">
+            <div class="bg-[#0c0e10] shadow-md rounded-xl px-6 py-5 w-[90%] mx-auto -mt-18 relative z-10 text-gray-200">
                 <!-- Top row -->
                 <div class="flex justify-between items-center mb-4">
                     <h3 class="text-base font-semibold">
                         <span class="inline-flex items-center gap-2">
-                            <img src="assets/location.png" class="w-4 h-5" />
+                            <img src="assets/location.png" class="w-5 h-5" />
                             Solar Land – Texas, USA
                         </span>
                     </h3>
@@ -279,18 +328,18 @@
                 </div>
 
                 <!-- Detail rows -->
-                <div class="space-y-3 text-sm text-gray-700">
+                <div class="space-y-3 text-sm">
                     <div class="flex justify-between">
                         <span class="flex items-center gap-2 font-semibold">
-                            <img src="assets/dollar.png" class="w-4 h-4" />
-                            Expected Yield
+                            <img src="assets/property-tier.png" class="w-5 h-5" />
+                            Property Tier
                         </span>
-                        <span class="font-semibold">10.1% APY <span class="text-gray-400">(paid in USDC)</span></span>
+                        <span class="font-semibold"> Gold Tier </span>
                     </div>
 
                     <div class="flex justify-between">
                         <span class="flex items-center gap-2 font-semibold">
-                            <img src="assets/padlock.png" class="w-4 h-4" />
+                            <img src="assets/padlock.png" class="w-5 h-5" />
                             Status
                         </span>
                         <span class="font-semibold">Open for bonding</span>
@@ -308,7 +357,7 @@
                 <!-- CTA -->
                 <div class="text-center mt-6">
                     <a href="#"
-                        class="inline-block bg-[#2873E9] hover:bg-blue-700 text-white text-sm font-medium px-6 py-3 rounded-md">
+                        class="inline-block bg-[#24313e] hover:bg-[#2e3f50] text-white text-sm font-medium px-6 py-3 rounded-md">
                         View Property Details
                     </a>
                 </div>
@@ -318,12 +367,12 @@
 
     <section class="bg-[#030A1A] text-white py-16 px-4 md:px-8">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-xl font-semibold mb-6">Fund a Property</h2>
+            <h2 class="text-xl font-semibold mb-6">View More Properties</h2>
 
             <div class="space-y-6">
                 <!-- Property Card -->
                 <div class="flex items-start gap-4 bg-[#0e111c] p-4 rounded-lg">
-                    <img src="assets/propertiex.png" alt="2 Acres in Nicaragua"
+                    <img src="assets/nicaragua.jpg" alt="2 Acres in Nicaragua"
                         class="w-24 h-32 object-cover rounded-md" />
                     <div class="flex-1">
                         <h3 class="font-medium mb-1">2 Acres in Nicaragua</h3>
@@ -353,7 +402,7 @@
                 </div>
 
                 <div class="flex items-start gap-4 bg-[#0e111c] p-4 rounded-lg">
-                    <img src="assets/propertiex.png" alt="2 Acres in Nicaragua"
+                    <img src="assets/portugal.jpg" alt="2 Acres in Nicaragua"
                         class="w-24 h-32 object-cover rounded-md" />
                     <div class="flex-1">
                         <h3 class="font-medium mb-1">Land in Portugal</h3>
@@ -383,7 +432,7 @@
                 </div>
 
                 <div class="flex items-start gap-4 bg-[#0e111c] p-4 rounded-lg">
-                    <img src="assets/propertiex.png" alt="2 Acres in Nicaragua"
+                    <img src="assets/colorado.jpeg" alt="2 Acres in Nicaragua"
                         class="w-24 h-32 object-cover rounded-md" />
                     <div class="flex-1">
                         <h3 class="font-medium mb-1">Off-Grid Land in Colorado</h3>
@@ -414,7 +463,7 @@
 
 
                 <div class="flex items-start gap-4 bg-[#0e111c] p-4 rounded-lg">
-                    <img src="assets/propertiex.png" alt="2 Acres in Nicaragua"
+                    <img src="assets/costarica.jpeg" alt="2 Acres in Nicaragua"
                         class="w-24 h-32 object-cover rounded-md" />
                     <div class="flex-1">
                         <h3 class="font-medium mb-1">4 Ha in Costa Rica</h3>
@@ -448,6 +497,8 @@
 
     <section class="bg-[#030A1A] px-4 md:px-8 py-8">
         <div class=" text-white p-4 max-w-6xl mx-auto">
+
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-2 text-center">Explore Your Profile</h2>
 
             <div class="p-6">
                 <div class="flex items-center gap-4 mb-6">
@@ -492,7 +543,7 @@
                 </div>
 
                 <div class="bg-[#030A1A] rounded-lg p-3 flex gap-3">
-                    <img src="assets/house.jpg" alt="Timberland"
+                    <img src="assets/prime-timberland.jpg" alt="Timberland"
                         class="w-20 h-20 md:w-30 md:h-30 rounded-md object-cover">
                     <div class="flex flex-col justify-between py-4">
                         <p class="text-sm md:text-2xl font-semibold">Prime timberland</p>
@@ -546,7 +597,7 @@
                         class="w-16 h-16 md:w-20 md:h-20 rounded-full border-1 p-1 border-gray-700">
                     <div>
                         <p class="text-sm md:text-base font-semibold">@pepecoinmaxi</p>
-                        <p class="text-xs md:text-sm text-white bg-[#161c2e] p-1 rounded">rei.house/@pepeccinmaxi</p>
+                        <p class="text-xs md:text-sm text-white bg-[#161c2e] p-1 rounded">Plot.Fun/PepeCoinMaxi</p>
                     </div>
                 </div>
                 <!-- Referral Investments -->
@@ -585,19 +636,10 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="bg-[#030A1A] px-4 md:px-8 py-8">
         <div class="text-white p-6 max-w-6xl mx-auto">
             <!-- Heading -->
             <div class="mb-6">
-                <h2 class="text-3xl font-semibold flex justify-center items-center gap-2">
-                    <svg class="w-5 h-5 md:w-7 md:h-7 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                    </svg>
-                    Referrals
-                </h2>
                 <p class="text-base md:text-xl text-gray-200 mt-1">Below are users who joined via your referral link.
                     When they
                     make a
@@ -646,13 +688,13 @@
                         <p class="text-sm md:text-lg text-gray-400 mt-1">17 coins</p>
                     </div>
                     <div class="bg-transparent p-2 rounded-lg text-left">
-                        <img src="assets/house.jpg" alt="Timberland"
+                        <img src="assets/prime-timberland.jpg" alt="Timberland"
                             class="w-full h-36 lg:h-44 object-cover rounded-md mb-1">
                         <p class="text-sm md:text-lg text-white font-semibold">Prime timberland</p>
                         <p class="text-sm md:text-lg text-gray-400 mt-1">8 coins</p>
                     </div>
                     <div class="bg-transparent p-2 rounded-lg text-left">
-                        <img src="assets/house.jpg" alt="Portugal"
+                        <img src="assets/portugal.jpg" alt="Portugal"
                             class="w-full h-36 lg:h-44 object-cover rounded-md mb-1">
                         <p class="text-sm md:text-lg text-white font-semibold">Land in Portugal</p>
                         <p class="text-sm md:text-lg text-gray-400 mt-1">20 coins</p>
